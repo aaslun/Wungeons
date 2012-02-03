@@ -1,0 +1,249 @@
+/**
+* Global style
+**/
+body {
+    background: #000; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #323538 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#323538), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #323538 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #323538 0%,#000000 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #323538 0%,#000000 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323538', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: Geneva;
+}
+a, a:visited {
+    color: #CCC;
+    text-decoration: none;
+}
+a:hover {
+    text-shadow: 0 0 10px #FFF;
+}
+a:active {
+    color: #222;
+    text-shadow: 0 0 10px #FFF;
+}
+
+.beveled {
+    border:1px solid;
+    border-color:rgba(225,225,225,0.4)
+                 rgba(110,110,110,0.4)
+                 rgba(0,0,0,0.4)
+                 rgba(225,225,225,0.4) !important;
+}
+.carved {
+    border:1px solid;
+    border-color:rgba(0,0,0,0.4)
+                 rgba(225,225,225,0.1)
+                 rgba(225,225,225,0.2)
+                 rgba(0,0,0,0.2) !important;
+}
+#in_game .background,
+#main_menu .background,
+#char_gen .background {
+    background: url("../img/marble_background.jpg") repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+/**
+*
+* Main menu screen
+*
+**/
+#main_menu .options_wrapper {
+    margin: 0px auto;
+    position: relative;
+    padding:10% 20%;
+}
+#main_menu .options_container {
+    padding:10%;
+    border-width: 3px !important;
+    color: #CCC;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: bold;
+    font-size: 2em;
+}
+#main_menu .options_container p {
+    text-align: center;
+}
+/**
+*
+* Character generation screen
+*
+**/
+#char_gen .portraits_wrapper {
+    float: left;
+    margin:4px;
+    width:40%;
+    height:400px;
+    overflow: auto;
+    border-width: 3px !important;
+}
+#char_gen .portrait {
+    float: left;
+    position: relative;
+    margin: 20px auto;
+}
+#char_gen .infobox {
+    float: left;
+    margin:4px;
+    width:48%;
+    height:400px;
+    overflow: auto;
+    border-width: 3px !important;
+}
+
+/**
+*
+* In-game screen
+*
+**/
+#in_game .viewport {
+    background-image: url('../img/dummy_view.png');
+    background-color: #000000;
+    width:600px;
+    height:370px;
+    margin:4px;
+    float:left;
+    border-width:2px;
+        -webkit-border-image:
+        -webkit-gradient(linear, 100% 75%, 50% 25%, from(#444), to(#111)) 1 100%;
+}
+/* Navi */
+#in_game .navi_wrapper {
+    overflow: auto;
+    float: left;
+}
+    #in_game .navi_wrapper .navi_buttons {
+        width: 228px;
+        height: 120px;
+        margin: 4px;
+        float: left;
+        overflow: auto;
+        background: #000;
+    }
+        #in_game .navi_wrapper .navi_buttons div {
+            width: 70px;
+            height: 54px;
+            float: left;
+            margin: 2px;
+        }
+        #in_game .navi_wrapper .navi_buttons .turn_left {
+            background: #565555 url('../img/icons/turn_left.png') no-repeat center;
+        }
+        #in_game .navi_wrapper .navi_buttons .forward {
+            background: #565555 url('../img/icons/forward.png') no-repeat center;
+        }
+        #in_game .navi_wrapper .navi_buttons .turn_right {
+            background: #565555 url('../img/icons/turn_right.png') no-repeat center;
+        }
+        #in_game .navi_wrapper .navi_buttons .left {
+            background: #565555 url('../img/icons/left.png') no-repeat center;
+        }
+        #in_game .navi_wrapper .navi_buttons .backwards {
+            background: #565555 url('../img/icons/backwards.png') no-repeat center;
+        }
+        #in_game .navi_wrapper .navi_buttons .right {
+            background: #565555 url('../img/icons/right.png') no-repeat center;
+        }
+    #in_game .navi_wrapper .navi_compass {
+        width: 280px;
+        height: 120px;
+        margin: 4px 4px 4px 87px;
+        float: left;
+    }
+/* Characters */
+#in_game .characters_wrapper {
+    float: right;
+    width:380px;
+    height:450px;
+    margin:2px;
+    overflow: hidden;
+}
+#in_game .character_slot {
+    width: 180px;
+    height: 140px;
+    margin:4px;
+    float: left;
+}
+#in_game .characters_wrapper .character {
+    overflow: auto;
+    position: relative;
+    background: #000000;
+    float: left;
+    width: 180px;
+    height: 140px;
+    border-width:1px;
+        -webkit-border-image:
+        -webkit-gradient(linear, 0% 25%, 25% 0, from(#222), to(#111)) 1 100%;
+}
+#in_game .characters_wrapper .character .name_bar {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 173px;
+    height: 20px;
+    color: #000;
+    text-shadow: 1px 1px 1px #AAA;
+    background: #565555;
+    font-size: 16px;
+    padding-left: 5px;
+    cursor: move;
+}
+#in_game .characters_wrapper .character .health_bar {
+    position:relative;
+    float: left;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    height: 18px;
+    border-top: 1px solid #222;
+    margin:1px;
+    background: #68c95d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #68c95d 0%, #34b03a 50%, #0c9e18 51%, #38c03d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68c95d), color-stop(50%,#34b03a), color-stop(51%,#0c9e18), color-stop(100%,#38c03d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #68c95d 0%,#34b03a 50%,#0c9e18 51%,#38c03d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #68c95d 0%,#34b03a 50%,#0c9e18 51%,#38c03d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #68c95d 0%,#34b03a 50%,#0c9e18 51%,#38c03d 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68c95d', endColorstr='#38c03d',GradientType=0 ); /* IE6-9 */
+}
+#in_game .characters_wrapper .character .portrait,
+#char_gen .portraits_wrapper .portrait {
+    position: relative;
+    height:96px;
+    width:100px;
+    float: left;
+}
+#in_game .characters_wrapper .character .hand {
+    float: right;
+    height: 46px;
+    width: 62px;
+    background: #565555;
+}
+/* Footer */
+#in_game .footer_wrapper {
+    overflow: auto;
+    float: left;
+    width: 100%;
+    margin-top:20px;
+}
+#in_game .footer_wrapper .console {
+    background-color: #000000;
+    width:81%;
+    height:80px;
+    margin:4px;
+    border-width:2px;
+        -webkit-border-image:
+        -webkit-gradient(linear, 10% 100%, 50% 100%, from(#333), to(#111)) 1 100%;
+    float: left;
+}
+#in_game .footer_wrapper .camp {
+    width:100px;
+    height:80px;
+    margin:4px;
+    padding:1px;
+    float: right;
+    background: #565555;
+}
