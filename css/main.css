@@ -11,6 +11,9 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323538', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     font-family: Geneva;
 }
+p {
+    margin: 0.5em 0;
+}
 a, a:visited {
     color: #CCC;
     text-decoration: none;
@@ -73,28 +76,62 @@ a:active {
 * Character generation screen
 *
 **/
-#char_gen .portraits_wrapper {
+#char_gen .header {
+    margin:0px auto;
+}
+#char_gen .header img {
+    width: 70%;
+    height: 70%;
+    padding:0 15%;
+}
+#char_gen .characters_wrapper {
     float: left;
-    margin:4px;
-    width:40%;
-    height:400px;
+    margin:4px 5% 0 5%;
+    height:330px;
+    width:30%;
     overflow: auto;
     border-width: 3px !important;
 }
-#char_gen .portrait {
+#char_gen .characters_wrapper .line_wrapper {
     float: left;
+    margin: 0px auto;
+    overflow: auto;
+    width: 50%;
+}
+#char_gen .character_container {
+    float: left;
+}
+#char_gen .character_container .portrait {
+    margin:24% 24% 0 42%;
+    float: none !important;
+}
+#char_gen .character_container .name_bar {
     position: relative;
-    margin: 20px auto;
+    width: 100px;
+    height: 20px;
+    margin: 5% 42%;
 }
 #char_gen .infobox {
-    float: left;
-    margin:4px;
-    width:48%;
-    height:400px;
+    margin:4px 5%;
+    width:auto;
+    height:392px;
     overflow: auto;
     border-width: 3px !important;
 }
-
+#char_gen .infobox .info_wrapper {
+    margin:10%;
+    color: #CCC;
+    text-shadow: 1px 1px 1px #222;
+}
+#char_gen .start_button {
+    width: 200px;
+    margin: 8px 5%;
+    background: #565555;
+    border-radius: 5px;
+}
+#char_gen .start_button p {
+    text-align: center;
+}
 /**
 *
 * In-game screen
@@ -210,7 +247,7 @@ a:active {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68c95d', endColorstr='#38c03d',GradientType=0 ); /* IE6-9 */
 }
 #in_game .characters_wrapper .character .portrait,
-#char_gen .portraits_wrapper .portrait {
+#char_gen .characters_wrapper .portrait {
     position: relative;
     height:96px;
     width:100px;
@@ -246,4 +283,5 @@ a:active {
     padding:1px;
     float: right;
     background: #565555;
+    border-radius: 5px;
 }

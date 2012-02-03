@@ -52,21 +52,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="body.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/body.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="675" selection-end="675" vertical-scroll-proportion="0.21699819">
+            <state line="27" column="18" selection-start="955" selection-end="955" vertical-scroll-proportion="-3.772152">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="22" selection-start="2266" selection-end="2266" vertical-scroll-proportion="-6.7090907">
+            <state line="89" column="16" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.2287234">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="char_gen_header.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/char_gen_header.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -366,13 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="22" selection-start="2266" selection-end="2266" vertical-scroll-proportion="-6.7090907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/in-game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="28" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
@@ -380,9 +380,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/char_gen_header.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/body.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="675" selection-end="675" vertical-scroll-proportion="0.21699819">
+        <state line="27" column="18" selection-start="955" selection-end="955" vertical-scroll-proportion="-3.772152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="16" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.2287234">
           <folding />
         </state>
       </provider>

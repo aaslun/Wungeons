@@ -16,17 +16,41 @@
 </div>
 
 <div id="char_gen" style="display:block;">
-     <div class="background"></div>
-    <div class="header"></div>
-     <div class="portraits_wrapper carved">
-         <div class="portrait carved"></div>
-         <div class="portrait carved"></div>
-         <div class="portrait carved"></div>
-         <div class="portrait carved"></div>
-     </div>
-    <div class="infobox carved"></div>
-    <div class="start_button"></div>
- </div>
+    <div class="background"></div>
+    <div class="header">
+        <img src="img/char_gen_header.png" alt="Character Generation"/>
+    </div>
+    <div class="characters_wrapper carved">
+        <div class="line_wrapper">
+            <div class="character_container">
+                <div class="portrait carved"></div>
+                <div class="name_bar carved"></div>
+            </div>
+            <div class="character_container">
+                <div class="portrait carved"></div>
+                <div class="name_bar carved"></div>
+            </div>
+        </div>
+        <div class="line_wrapper">
+            <div class="character_container">
+                <div class="portrait carved"></div>
+                <div class="name_bar carved"></div>
+            </div>
+            <div class="character_container">
+                <div class="portrait carved"></div>
+                <div class="name_bar carved"></div>
+            </div>
+        </div>
+    </div>
+    <div class="infobox carved">
+        <div class="info_wrapper">
+            <p>Select the character you want to create or review</p>
+        </div>
+    </div>
+    <div class="start_button beveled">
+        <p>Start the adventure</p>
+    </div>
+</div>
 
 <div id="in_game" style="display:none;">
     <div class="viewport"></div>
