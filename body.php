@@ -1,4 +1,4 @@
-<div id="main_menu" style="display:none;">
+<div id="main_menu" style="display:block;">
     <div class="background"></div>
     <div class="options_wrapper">
         <div class="options_container carved">
@@ -15,28 +15,28 @@
     </div>
 </div>
 
-<div id="char_gen" style="display:block;">
+<div id="char_gen" style="display:none;">
     <div class="background"></div>
     <div class="header">
         <img src="img/char_gen_header.png" alt="Character Generation"/>
     </div>
     <div class="characters_wrapper carved">
         <div class="line_wrapper">
-            <div class="character_container">
+            <div id="char_1" class="character_container">
                 <div class="portrait carved"></div>
                 <div class="name_bar carved"></div>
             </div>
-            <div class="character_container">
+            <div id="char_3" class="character_container">
                 <div class="portrait carved"></div>
                 <div class="name_bar carved"></div>
             </div>
         </div>
         <div class="line_wrapper">
-            <div class="character_container">
+            <div id="char_2" class="character_container">
                 <div class="portrait carved"></div>
                 <div class="name_bar carved"></div>
             </div>
-            <div class="character_container">
+            <div id="char_4" class="character_container">
                 <div class="portrait carved"></div>
                 <div class="name_bar carved"></div>
             </div>

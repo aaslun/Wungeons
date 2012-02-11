@@ -11,6 +11,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323538', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     font-family: Geneva;
 }
+.sparkling{ position:relative;}
+.particle{ position:absolute;z-index:10;top:0px;left:0px;}
 p {
     margin: 0.5em 0;
 }
@@ -86,7 +88,7 @@ a:active {
 }
 #char_gen .characters_wrapper {
     float: left;
-    margin:4px 5% 0 5%;
+    margin:20px 5% 0 5%;
     height:330px;
     width:30%;
     overflow: auto;
@@ -105,6 +107,13 @@ a:active {
     margin:24% 24% 0 42%;
     float: none !important;
 }
+#char_gen .character_container .portrait:hover {
+    cursor: pointer;
+}
+#char_gen .character_container .sparkling {
+    box-shadow: 0 0 10px #CCC;
+}
+
 #char_gen .character_container .name_bar {
     position: relative;
     width: 100px;
@@ -112,9 +121,9 @@ a:active {
     margin: 5% 42%;
 }
 #char_gen .infobox {
-    margin:4px 5%;
+    margin:20px 5%;
     width:auto;
-    height:392px;
+    height:382px;
     overflow: auto;
     border-width: 3px !important;
 }
