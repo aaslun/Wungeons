@@ -28,7 +28,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="-9.375">
+            <state line="15" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-manager.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game-manager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+            <state line="22" column="24" selection-start="575" selection-end="575" vertical-scroll-proportion="0.5527638">
               <folding />
             </state>
           </provider>
@@ -55,7 +55,7 @@
       <file leaf-file-name="chargen.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/chargen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="2539" selection-end="2539" vertical-scroll-proportion="-9.163636">
+            <state line="53" column="52" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,7 +64,7 @@
       <file leaf-file-name="body.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/body.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="133" selection-end="150" vertical-scroll-proportion="-0.56962025">
+            <state line="17" column="39" selection-start="556" selection-end="561" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="20" selection-start="2840" selection-end="2840" vertical-scroll-proportion="-6.7090907">
+            <state line="99" column="19" selection-start="2542" selection-end="2542" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +82,7 @@
       <file leaf-file-name="particles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/particles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="803" selection-end="803" vertical-scroll-proportion="-3.8181818">
+            <state line="14" column="30" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-menu.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main-menu.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main-menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="58" selection-start="183" selection-end="183" vertical-scroll-proportion="0.08108108">
+            <state line="5" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,12 +122,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/in-game.js" />
         <option value="$PROJECT_DIR$/js/particles.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/chargen.js" />
-        <option value="$PROJECT_DIR$/body.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/js/main-menu.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/body.php" />
+        <option value="$PROJECT_DIR$/js/chargen.js" />
+        <option value="$PROJECT_DIR$/js/game-manager.js" />
       </list>
     </option>
   </component>
@@ -163,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,6 +212,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,13 +242,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -256,6 +250,13 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
     </configuration>
     <list size="0" />
   </component>
@@ -293,8 +294,8 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801303" sideWeight="0.4248862" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801303" sideWeight="0.5644916" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14495113" sideWeight="0.4430956" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14495113" sideWeight="0.54628223" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -371,11 +372,6 @@
         <state line="58" column="78" selection-start="3340" selection-end="3346" vertical-scroll-proportion="0.3322091" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/forward.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/particles/sparkle.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -391,32 +387,38 @@
         <state line="3" column="28" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="39" selection-start="556" selection-end="561" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="20" selection-start="2840" selection-end="2840" vertical-scroll-proportion="-6.7090907">
+        <state line="99" column="19" selection-start="2542" selection-end="2542" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/particles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="803" selection-end="803" vertical-scroll-proportion="-3.8181818">
-          <folding />
-        </state>
+        <state line="14" column="30" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/chargen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="2539" selection-end="2539" vertical-scroll-proportion="-9.163636">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/img/icons/forward.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/game-manager.js">
+    <entry file="file://$PROJECT_DIR$/js/main-menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/head.php">
@@ -426,23 +428,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/chargen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="-9.375">
+        <state line="53" column="52" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/body.php">
+    <entry file="file://$PROJECT_DIR$/js/game-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="133" selection-end="150" vertical-scroll-proportion="-0.56962025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main-menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="183" selection-end="183" vertical-scroll-proportion="0.08108108">
+        <state line="22" column="24" selection-start="575" selection-end="575" vertical-scroll-proportion="0.5527638">
           <folding />
         </state>
       </provider>

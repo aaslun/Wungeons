@@ -1,4 +1,4 @@
-<div id="main_menu" style="display:block;">
+<div id="main_menu" style="display:none;">
     <div class="background"></div>
     <div class="options_wrapper">
         <div class="options_container carved">
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div id="char_gen" style="display:none;">
+<div id="char_gen" style="display:block;">
     <div class="background"></div>
     <div class="header">
         <img src="img/char_gen_header.png" alt="Character Generation"/>

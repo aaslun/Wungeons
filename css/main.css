@@ -80,6 +80,7 @@ a:active {
 **/
 #char_gen .header {
     margin:0px auto;
+    padding: 40px 0 20px 0;
 }
 #char_gen .header img {
     width: 70%;
@@ -91,14 +92,13 @@ a:active {
     margin:20px 5% 0 5%;
     height:330px;
     width:30%;
-    overflow: auto;
     border-width: 3px !important;
 }
 #char_gen .characters_wrapper .line_wrapper {
     float: left;
     margin: 0px auto;
     overflow: auto;
-    width: 50%;
+    width: 180px;
 }
 #char_gen .character_container {
     float: left;
@@ -123,7 +123,7 @@ a:active {
 #char_gen .infobox {
     margin:20px 5%;
     width:auto;
-    height:382px;
+    height:330px;
     overflow: auto;
     border-width: 3px !important;
 }

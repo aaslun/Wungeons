@@ -47,8 +47,10 @@ jQuery(function(){
         jQuery.each($chars.find('.portrait'), function(key, portrait){
             jQuery(portrait).removeClass('sparkling');
         });
-
         jQuery(this).addClass('sparkling');
         sparkle();
+
+        // Init new character generation
+        GameManager.generateCharacter(jQuery(this));
     });
 });
