@@ -44,7 +44,7 @@
     </div>
     <div class="infobox carved">
         <div class="info_wrapper">
-            <p>Select the character you want to create or review</p>
+            <p><strong>Select the character you want to create or review</strong></p>
         </div>
     </div>
     <div class="start_button beveled">

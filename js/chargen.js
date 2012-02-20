@@ -51,6 +51,6 @@ jQuery(function(){
         sparkle();
 
         // Init new character generation
-        GameManager.generateCharacter(jQuery(this));
+        GameManager.generateCharacter(jQuery(this).parent());
     });
 });

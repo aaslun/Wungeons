@@ -10,12 +10,40 @@ GameManager.fadeBetween = function(fromScreen, toScreen) {
 
 GameManager.generateCharacter = function($char) {
     GameManager.currentStatus = { isGeneratingCharacter: true };
-    var character = new Character();
-    character.
+
+    var $infoWrapper = jQuery('#char_gen .info_wrapper'),
+        character = new Character($char.attr('id')),
+        $anchor, self = this;
+
+    // STEP 1: Select alignment
+    var $step1_alignment = jQuery('<p><strong>Select alignment for this character:</strong></p>');
+    for(var a in Characters.ALIGNMENT) {
+        $anchor = jQuery('<a href="#"></a>')
+                .click(function(){
+                    character.alignment = jQuery(this).text();
+                    generateRace();
+                });
+        $step1_alignment.append(jQuery('<p></p>').append($anchor.append(Characters.ALIGNMENT[a])));
+    }
+    $infoWrapper.html($step1_alignment);
+
+    // Step 2: Select race
+    var generateRace = function(){
+        var $step2_race = jQuery('<p><strong>Select race:</strong></p>');
+        for(var r in Characters.RACE) {
+            $anchor = jQuery('<a href="#"></a>')
+                    .click(function(){
+                        character.race = jQuery(this).text();
+                    });
+            $step2_race.append(jQuery('<p></p>').append($anchor.append(Characters.RACE[r])));
+        }
+        $infoWrapper.html($step2_race);
+    };
     GameManager.currentStatus = { isGeneratingCharacter: false };
 };
 
-function Character() {
+function Character(id) {
+    this.id = id;
     this.name = '';
     this.race = '';
     this.xp = 0;
