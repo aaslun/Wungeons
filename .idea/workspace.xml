@@ -25,15 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="head.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/head.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-manager.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game-manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="168" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.69557196">
+            <state line="77" column="50" selection-start="2918" selection-end="2918" vertical-scroll-proportion="-2.7818182">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gh-pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="148" selection-end="148" vertical-scroll-proportion="0.191453">
               <folding />
             </state>
           </provider>
@@ -129,6 +129,8 @@
         <option value="$PROJECT_DIR$/js/chargen.js" />
         <option value="$PROJECT_DIR$/body.php" />
         <option value="$PROJECT_DIR$/js/game-manager.js" />
+        <option value="$PROJECT_DIR$/gh-pages/index2.html" />
+        <option value="$PROJECT_DIR$/gh-pages/index.html" />
       </list>
     </option>
   </component>
@@ -207,6 +209,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="gh-pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wungeons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wungeons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gh-pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wungeons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wungeons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -218,6 +252,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -229,6 +264,11 @@
         </serverdata>
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gh-pages/img" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" scope="Directory">
@@ -429,7 +469,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="168" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.69557196">
+        <state line="77" column="50" selection-start="2918" selection-end="2918" vertical-scroll-proportion="-2.7818182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gh-pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="148" selection-end="148" vertical-scroll-proportion="0.191453">
           <folding />
         </state>
       </provider>
