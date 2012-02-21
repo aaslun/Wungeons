@@ -7,6 +7,26 @@ GameManager.fadeBetween = function(fromScreen, toScreen) {
         jQuery(toScreen).fadeIn(1000);
     })
 };
+GameManager.getMinValue = function(numberArray){
+    var minValue = numberArray[0];
+    for(var i=1;i<numberArray.length;i++){
+    if(numberArray[i] < minValue){
+          minValue = numberArray[i];
+        }
+    }
+    return minValue;
+};
+GameManager.roll4d6sk3 = function(){
+    var result = 0, resultArray = [];
+    for(var i=0; i<4; i++){
+        resultArray.push(Math.floor((6)*Math.random()+1));
+    }
+    var minValue = GameManager.getMinValue(resultArray);
+    for(i=0; i<resultArray.length; i++){
+        result += resultArray[i];
+    }
+    return result-minValue;
+};
 
 GameManager.generateCharacter = function($char) {
     GameManager.currentStatus = { isGeneratingCharacter: true };
@@ -31,13 +51,48 @@ GameManager.generateCharacter = function($char) {
     var generateRace = function(){
         var $step2_race = jQuery('<p><strong>Select race:</strong></p>');
         for(var r in Characters.RACE) {
-            $anchor = jQuery('<a href="#"></a>')
+            $anchor = jQuery('<a href="#" data-race="'+r+'"></a>')
                     .click(function(){
-                        character.race = jQuery(this).text();
+                        character.race = jQuery(this).attr('data-race');
+                        for(var a1 in character.abilities){
+                            for(var a2 in Characters.RACE[character.race].ABILITIES){
+                                if(a2 == a1) {
+                                    character.abilities[a1] = Characters.RACE[character.race].ABILITIES[a2];
+                                }
+                            }
+                        }
+                        generateClass();
                     });
-            $step2_race.append(jQuery('<p></p>').append($anchor.append(Characters.RACE[r])));
+            $step2_race.append(jQuery('<p></p>').append($anchor.append(Characters.RACE[r].NAME)));
         }
         $infoWrapper.html($step2_race);
+    };
+
+    // Step 3: Select class
+    var generateClass = function(){
+        var $step3_class = jQuery('<p><strong>Select class:</strong></p>');
+        for(var c in Characters.CLASS) {
+            $anchor = jQuery('<a href="#"></a>')
+                    .click(function(){
+                        character.clazz = jQuery(this).text();
+                        generateAbilitiesScores();
+                    });
+            $step3_class.append(jQuery('<p></p>').append($anchor.append(Characters.CLASS[c])));
+        }
+        $infoWrapper.html($step3_class);
+    };
+
+    // Step 4: Setup abilities scores
+    var generateAbilitiesScores = function() {
+        var a_val, $step4_abilities = jQuery('<p><strong>Character ability values:</strong></p>'),
+                $subtract = jQuery('<a href="#" onclick="return false;">[-]</a>'),
+                $add = jQuery('<a href="#" onclick="return false;">[+]</a>');
+        for(var a in character.abilities){
+            a_val = GameManager.roll4d6sk3();
+            $step4_abilities.append(jQuery('<p></p>').append(Characters.ABILITIES[a]+': '+(character.abilities[a] + a_val)).append($subtract.clone()).append($add.clone()));
+        }
+        $step4_abilities.append(jQuery('<p><a href="#">Reroll</a></p>').click(generateAbilitiesScores));
+        $infoWrapper.html($step4_abilities);
     };
     GameManager.currentStatus = { isGeneratingCharacter: false };
 };
@@ -49,17 +104,67 @@ function Character(id) {
     this.xp = 0;
     this.level = 0;
     this.alignment = '';
+    this.clazz = ''; // class was reserved
+    this.abilities = {
+        STRENGTH : 0,
+        DEXTERITY : 0,
+        CONSTITUTION : 0,
+        INTELLIGENCE : 0,
+        WISDOM : 0,
+        CHARISMA : 0
+    }
 }
 
 var Characters = {};
 
+Characters.ABILITIES = {
+    STRENGTH: 'Strength',
+    DEXTERITY: 'Dexterity',
+    CONSTITUTION: 'Constitution',
+    INTELLIGENCE: 'Intelligence',
+    WISDOM: 'Wisdom',
+    CHARISMA: 'Charisma'
+};
+
 Characters.RACE = {
-    HUMAN : 'Human',
-    ELF : 'Elf',
-    HALF_ELF : 'Half-elf',
-    DWARF : 'Dwarf',
-    HALFLING : 'Halfling',
-    GNOME : 'Gnome'
+    HUMAN: {
+        NAME: 'Human'
+    },
+    ELF: {
+        NAME: 'Elf',
+        ABILITIES: {
+            DEXTERITY: +2,
+            CONSTITUTION: -2
+        }
+    },
+    HALF_ELF: {
+            NAME: 'Half-Elf',
+            ABILITIES: {
+                DEXTERITY: +1,
+                CONSTITUTION: -1
+            }
+        },
+    DWARF: {
+            NAME: 'Dwarf',
+            ABILITIES: {
+                CONSTITUTION: +2,
+                CHARISMA: -2
+            }
+        },
+    HALFLING: {
+                NAME: 'Halfling',
+                ABILITIES: {
+                    DEXTERITY: +2,
+                    STRENGTH: -2
+                }
+            },
+    GNOME: {
+                NAME: 'Gnome',
+                ABILITIES: {
+                    CONSTITUTION: +2,
+                    STRENGTH: -2
+                }
+            }
 };
 
 Characters.CLASS = {
