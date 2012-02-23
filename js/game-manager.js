@@ -27,6 +27,14 @@ GameManager.roll4d6sk3 = function(){
     }
     return result-minValue;
 };
+GameManager.updateAbValue = function($obj, value) {
+    var poolVal = parseInt($obj.parent().parent().find('.pool').text());
+    if(poolVal <= 0 && value == +1)
+        return false;
+    var abval = parseInt($obj.parent().find('.abval').text());
+    $obj.parent().parent().find('.pool').html(poolVal - value);
+    $obj.parent().find('.abval').html(abval + value);
+};
 
 GameManager.generateCharacter = function($char) {
     GameManager.currentStatus = { isGeneratingCharacter: true };
@@ -84,14 +92,16 @@ GameManager.generateCharacter = function($char) {
 
     // Step 4: Setup abilities scores
     var generateAbilitiesScores = function() {
-        var a_val, $step4_abilities = jQuery('<p><strong>Character ability values:</strong></p>'),
-                $subtract = jQuery('<a href="#" onclick="return false;">[-]</a>'),
-                $add = jQuery('<a href="#" onclick="return false;">[+]</a>');
+        var a_val, modifiers = 0, $step4_abilities = jQuery('<p><strong>Character ability values:</strong></p>'),
+                $subtract = jQuery('<a href="#" onclick="GameManager.updateAbValue(jQuery(this), -1); return false;">[-]</a>'),
+                $add = jQuery('<a href="#" onclick="GameManager.updateAbValue(jQuery(this), +1); return false;">[+]</a>');
+
         for(var a in character.abilities){
             a_val = GameManager.roll4d6sk3();
-            $step4_abilities.append(jQuery('<p></p>').append(Characters.ABILITIES[a]+': '+(character.abilities[a] + a_val)).append($subtract.clone()).append($add.clone()));
+            modifiers += Math.floor((a_val - 10) / 2);
+            $step4_abilities.append(jQuery('<p></p>').append(Characters.ABILITIES[a]+': <span class="abval">'+(character.abilities[a] + a_val)+'</span>').append($subtract.clone()).append($add.clone()));
         }
-        $step4_abilities.append(jQuery('<p><a href="#">Reroll</a></p>').click(generateAbilitiesScores));
+        $step4_abilities.append(jQuery('<p>Pool: <span class="pool">'+modifiers+'</span></p>').append(jQuery('<p><a href="#">Reroll</a></p>').click(generateAbilitiesScores)));
         $infoWrapper.html($step4_abilities);
     };
     GameManager.currentStatus = { isGeneratingCharacter: false };
